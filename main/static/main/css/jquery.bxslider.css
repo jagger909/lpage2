@@ -150,7 +150,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(static/main/img/controls.png) -86px -44px no-repeat;
+	background: url(../img/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 

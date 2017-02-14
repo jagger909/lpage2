@@ -65,24 +65,6 @@ function stickyMenu() {
     }
 }
 
-function formTab() {
-
-		$('.tab-menu a').on('click', function(event){
-			var $this = $(this),
-				data = $this.data('tab');
-
-			$('.tab-menu li').removeClass('active');
-			$this.closest('li').addClass('active');
-
-			$('.tab .tab-content-inner').removeClass('active');
-			$this.closest('.tab').find('.tab-content-inner[data-content="'+data+'"]').addClass('active');
-
-			event.preventDefault();
-
-		});
-
-}
-
 function inviewAnimation() {
 
     $('.skills').bind('inview', function () {
@@ -269,7 +251,7 @@ openProject();
 homeFullScreen();
 inviewAnimation();
 singlePageNav();
-formTab();
+
 
 window.onload = function () {
     $('#wrapper').removeClass('loading');
