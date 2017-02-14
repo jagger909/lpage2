@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+
+{% block navbar %}
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
+                        class="fa fa-bars"></i></button>
+                <a class="navbar-brand animate" href="#"><img src="{% static "main/img/logo.png" %}" alt="logo1"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right animate">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Наши услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#clients">Наши клиенты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
+
+{% endblock %}
+
+
+
+{% block content %}{% endblock %}
+
+
+
+{% block footer %}
+
+    <footer>
+        <div class="container">
+            <p>&copy; Copyright <a href="http://graphberry.com?ref=smak">GraphBerry.com</a> 2014 All rights reserved.
+                Distributed by <a href="http://htmltemplatesfree.in">HTMLTemplatesFree.in</a></p>
+            <ul class="social-list">
+                <li class="facebook">
+                    <a href="http://goo.gl/RqhEjP"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="twitter">
+                    <a href="http://goo.gl/hUfpSB"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="dribbble">
+                    <a href="http://goo.gl/k9zAy5"> <i class="fa fa-dribbble"></i></a>
+                </li>
+                <li class="youtube">
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+            </ul>
+            <a href="#home" class="square-l goup" style="position: relative">
+					<span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+					</span>
+            </a>
+        </div>
+    </footer>
+
+{% endblock %}
+
+
+{#{% extends "navbar.html" %}#}
+{#{% extends "home.html" %}#}
+{#{% extends "service.html" %}#}
+{#{% extends "about.html" %}#}
+{#{% extends "portfolio.html" %}#}
+{#{% extends "clients.html" %}#}
+{#{% extends "contact.html" %}#}
+{#{% extends "footer.html" %}#}
+
+
