@@ -99,7 +99,7 @@ a:focus {
 }
 
 .home {
-    background: url(../img/slider.jpg) no-repeat top fixed;
+    background: url(../img/kukhnya.jpg) no-repeat top fixed;
     position: relative;
     width: 100%;
     /*background-size: auto 100%;*/
@@ -1554,7 +1554,7 @@ RESPONSIVE
 }
 
 #home .contact-form-area form h3 {
-    font-size: 36px;
+    font-size: 25px;
     color: #fff;
     /*margin-bottom: 20px;*/
 }
