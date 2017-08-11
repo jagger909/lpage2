@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block navbar %}
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
+                        class="fa fa-bars"></i></button>
+                <a class="navbar-brand animate" href="#"><img src="{% static "main/img/logo.png" %}" alt="logo1"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right animate">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
+{% endblock %}

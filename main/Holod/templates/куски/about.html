@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block about %}
+    <section id="about">
+        <div class="container">
+            <div class="heading">
+                <div>About Us</div>
+                <h1>Who we are</h1>
+                <div class="divider">
+                    <span></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-item">
+                        <div class="circle pull-left">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <h4>On time projects</h4>
+                        <p class="font-m">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-item delay2">
+                        <div class="circle pull-left">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <h4>Fully support</h4>
+                        <p class="font-m">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-item delay4">
+                        <div class="circle pull-left">
+                            <i class="fa fa-thumbs-up"></i>
+                        </div>
+                        <h4>Professional experience</h4>
+                        <p class="font-m">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-item delay5">
+                        <div class="circle pull-left">
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <h4>Communicative team</h4>
+                        <p class="font-m">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray">
+            <div class="container">
+                <div class="heading">
+                    <h2>The team</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut
+                        laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="row">
+                    <ul class="team " id="og-grid">
+                        <li class="col-md-3">
+                            <a href="" class="team-member" data-title="John Doe"
+                               data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper nulla ut augue consectetur, at consequat enim malesuada."
+                               data-twitter="GraphBerry" data-facebook="facebook">
+                                <img src="{% static "main/img/Team/user_placeholder.png" %}" alt=""
+                                     class="img-responsive">
+                                <span class="name">John Doe</span>
+                                <span class="title">Ceo</span>
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="sdd" class="team-member" data-title="Josh Thompson"
+                               data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper nulla ut augue consectetur, at consequat enim malesuada."
+                               data-twitter="GraphBerry" data-facebook="facebook">
+                                <img src="{% static "main/img/Team/user_placeholder.png" %}" alt=""
+                                     class="img-responsive">
+                                <span class="name">Josh Thompson</span>
+                                <span class="title">Co-Founder</span>
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="team-member" data-title="Mary Jane"
+                               data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper nulla ut augue consectetur, at consequat enim malesuada."
+                               data-twitter="ceca" data-facebook="facebook">
+                                <img src="{% static "main/img/Team/user_placeholder.png" %}" alt=""
+                                     class="img-responsive">
+                                <span class="name">Mary Jane</span>
+                                <span class="title">Creative director</span>
+                            </a>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" class="team-member" data-title="Tiffany Klem"
+                               data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper nulla ut augue consectetur, at consequat enim malesuada."
+                               data-twitter="ceca" data-facebook="facebook">
+                                <img src="{% static "main/img/Team/user_placeholder.png" %}" alt=""
+                                     class="img-responsive">
+                                <span class="name">Tiffany Klem</span>
+                                <span class="title">Sale</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="branded-section skills">
+            <div class="masked">
+                <div class="container">
+                    <div class="heading">
+                        <h2>Skills</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt
+                            ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="chart">
+                                <div class="skill" data-percent="90">
+                                    <span class="percent">90%</span>
+                                </div>
+                                <h3>HTML &amp; CSS</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <div class="chart">
+                                <div class="skill" data-percent="96">
+                                    <span class="percent">96%</span>
+                                </div>
+                                <h3>AI &amp; PS</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="chart">
+                                <div class="skill" data-percent="85">
+                                    <span class="percent">85%</span>
+                                </div>
+                                <h3>JS</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="chart">
+                                <div class="skill" data-percent="94">
+                                    <span class="percent">94%</span>
+                                </div>
+                                <h3>Photography</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

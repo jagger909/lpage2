@@ -1,0 +1,59 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АНТ сервис. Ремонт холодильников в Казани</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static "main/css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "main/css/font-awesome.css" %}">
+    <link rel="stylesheet" href="{% static "main/css/main.css" %}">
+    <link rel="stylesheet" href="{% static "main/css/jquery.bxslider.css" %}">
+    <script src="{% static "main/js/modernizr.custom.js" %}"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="loader">
+    <div class="project-loader">
+        <div class="bubblingG">
+            <span id="bubblingG_1"></span>
+            <span id="bubblingG_2"></span>
+            <span id="bubblingG_3"></span>
+        </div>
+    </div>
+</div>
+<div class="loading" id="wrapper">
+    {% block navbar %} {% endblock %}
+    {% block content %} {% endblock %}
+    {% block footer %} {% endblock %}
+    {#        {% block home %} {% endblock %}#}
+    {#        {% block service %} {% endblock %}#}
+    {#        {% block portfolio %} {% endblock %}#}
+    {#        {% block clients %} {% endblock %}#}
+    {#        {% block contact %} {% endblock %}#}
+    {#        {% block footer %} {% endblock %}#}
+
+</div>
+<!-- Load all jsavascrip files -->
+<script type="text/javascript" src="{% static "main/js/jquery.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/bootstrap.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/jquery.bxslider.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/jquery.label_better.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/jquery.mixitup.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/jquery.easypiechart.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/jquery.inview.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/countUp.js" %}"></script>
+<script type="text/javascript" src="{% static "main/js/main.js" %}"></script>
+<script src="{% static "main/js/grid.js" %}"></script>
+<script>
+    $(function () {
+        Grid.init();
+    });
+</script>
+</body>
+</html>
