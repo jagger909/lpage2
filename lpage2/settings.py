@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
@@ -27,6 +29,7 @@ SECRET_KEY = 'j^^%o8lelxvkem_pet3*9tn37*&*^lv4s6z)ghxorwz@fjj2+-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
 
 # Application definition
 
@@ -135,6 +138,10 @@ STATICFILES_DIRS = [
 
 # TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+DATABASES['default'] = dj_database_url.config()
 
 
 try:

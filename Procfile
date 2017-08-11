@@ -1,1 +1,1 @@
-web: gunicorn lpage2.wsgi --log-file -
+web: gunicorn lpage2.wsgi
