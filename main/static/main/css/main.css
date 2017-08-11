@@ -99,10 +99,10 @@ a:focus {
 }
 
 .home {
-    background: url(../img/kukhnya.jpg) no-repeat top fixed;
+    background: url(../img/FonHome.jpg) no-repeat top fixed;
     position: relative;
     width: 100%;
-    /*background-size: auto 100%;*/
+    background-size: auto 100%;
 }
 
 .slide {
@@ -200,7 +200,8 @@ a:focus {
 }
 
 .gray {
-    background: #FBFBFB;
+    background: url(../img/service/FonUslugi.jpg) 0 0 no-repeat;
+    background-size: cover;
 }
 
 .service-item {
@@ -1519,7 +1520,6 @@ RESPONSIVE
 
 /*HOME TEST CSS*/
 
-
 .home-left-box H1 {
     font-size: 50px;
     color: #FFFFFF;;
@@ -1581,3 +1581,86 @@ RESPONSIVE
     background: #fff;
 }
 
+/* Заголовки с картинками*/
+
+.title_one {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.title_one h1 {
+    font-family: Serif;
+    position: relative;
+    top: 0;
+    height: 45px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 25px;
+    padding: 11px 10px;
+    margin: 0;
+    line-height: 1;
+    background: url("../img/ZagolovokGlavuCentre.png"), repeat-x;
+    background-size: auto 100%;
+
+}
+
+.title_one h1:before, .title_one h1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 44px;
+    height: 45px;
+
+}
+
+.title_one h1:before {
+    left: -43px;
+    background: url("../img/ZagolovokGlavuLeft.png"), no-repeat;
+    background-size: auto 100%;
+
+}
+
+.title_one h1:after {
+    right: -44px;
+    background: url("../img/ZagolovokGlavuRight.png"), no-repeat;
+    background-size: auto 100%;
+
+}
+
+.title_two {
+    text-align: center; /* выравнивание заголовка по центру обертки */
+    width: 80%; /* ширина обертки. На самом деле для фиксированной верстки можно использовать и px, но лучше сразу адаптировать под разные устройства, т.к. это, что называется, тренди :-) */
+    margin: 20px auto; /* выравнивание обертки по центру документа */
+    overflow: hidden; /* прячем линии за границами обертки, чтобы в случае изменения ширины экрана линии не выходили за ее пределы */
+
+}
+
+.title_two span {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Serif;
+
+}
+
+.title_two span:before {
+    display: block; /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+    width: 300px; /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+    content: ''; /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+    position: absolute; /* абсолютное позиционирование для управления линиями */
+    border-bottom: 2px solid #ffffff; /* бордер псевдо дива, т.е. сама линия */
+    top: 50%; /* позиционирование по вертикали */
+    right: 250px; /* позиционирование по горизонтали */
+}
+
+/* аналогичные стили для второго псевдоэлемента */
+
+.title_two span:after {
+    display: block;
+    width: 300px;
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #ffffff;
+    top: 50%;
+    left: 250px;
+}
