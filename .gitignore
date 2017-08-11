@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+Будет удалено .gitignore
+Будет удалено .idea/
+Будет удалено lpage2/__pycache__/
+Будет удалено main/__pycache__/
+Будет удалено main/migrations/__pycache__/
