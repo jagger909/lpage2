@@ -9,10 +9,10 @@
 
 (function(root, factory) {
     if(typeof exports === 'object') {
-        module.exports = factory(require('jquery'));
+        module.exports = factory(require('static/main/js/jquery'));
     }
     else if(typeof define === 'function' && define.amd) {
-        define('EasyPieChart', ['jquery'], factory);
+        define('EasyPieChart', ['static/main/js/jquery'], factory);
     }
     else {
         factory(root.jQuery);
